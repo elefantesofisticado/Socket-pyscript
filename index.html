@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenador + Puerto</title>
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
+    <script href="/nombreIP.py"></script>
+    <script href="/NombreOrdenador.py"></script>
+</head>
+<body>
+    <div class="ordenador">
+        Ordenador + <br>
+        
+        
+        <py-script>
+            import socket
+
+hostname = socket.gethostname()
+
+
+print("El nombre del ordenador esss: " + hostname)
+
+                    </py-script>|
+
+
+    </div>
+    <div class="IP">
+        <py-script>
+            import socket
+
+hostname = socket.gethostname()
+ip = socket.gethostbyname(hostname)
+
+
+print("IP = " + ip)
+        </py-script>
+
+    
+
+    
+
+    </div>
+
+</body>
+</html>
